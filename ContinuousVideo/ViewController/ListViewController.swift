@@ -11,7 +11,7 @@ final class ListViewController: UIViewController {
     // MARK: IBOutlets
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
-            tableView.backgroundColor = .secondarySystemBackground
+            tableView.backgroundColor = .clear
             tableView.tableFooterView = nil
             tableView.separatorStyle = .none
             tableView.showsVerticalScrollIndicator = false
@@ -78,12 +78,11 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
         headerView.frame = CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 60)
-        headerView.backgroundColor = .secondarySystemBackground
+        headerView.backgroundColor = view.backgroundColor
         
         let heading = UILabel()
         heading.frame = CGRect(x: 20, y: 30, width: headerView.bounds.width-40, height: 20)
         heading.font = .sectionHeader
-        heading.textColor = .label
         heading.text = viewModel.getHeading(at: section)
         headerView.addSubview(heading)
         

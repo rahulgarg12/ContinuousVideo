@@ -21,7 +21,7 @@ final class ListViewCollectionTableCell: UITableViewCell {
                                                        left: Constants.Space.imageCarouselInteritem,
                                                        bottom: 0,
                                                        right: Constants.Space.imageCarouselInteritem)
-            collectionView.backgroundColor = .secondarySystemBackground
+            collectionView.backgroundColor = superview?.backgroundColor
             collectionView.register(cellType: ImageCollectionCell.self)
             collectionView.prefetchDataSource = self
             collectionView.delegate = self

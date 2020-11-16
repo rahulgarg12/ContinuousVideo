@@ -46,6 +46,7 @@
 		35A2C886255ED5CB00C60B92 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2C885255ED5CB00C60B92 /* Constants.swift */; };
 		35A2C88E255ED83100C60B92 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2C88D255ED83100C60B92 /* UIFont+Extension.swift */; };
 		35A2C892255EDB0600C60B92 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 35A2C891255EDB0600C60B92 /* Kingfisher */; };
+		35FD0B0A25622E0D003D9C85 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD0B0925622E0D003D9C85 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		35A2C881255ED0E300C60B92 /* ListViewCollectionTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCollectionTableCellViewModel.swift; sourceTree = "<group>"; };
 		35A2C885255ED5CB00C60B92 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		35A2C88D255ED83100C60B92 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		35FD0B0925622E0D003D9C85 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			children = (
 				35A2C7E0255DB0B600C60B92 /* Extension */,
 				35A2C7E8255DB0F600C60B92 /* Protocol */,
+				35FD0B0825622DFB003D9C85 /* PropertyWrapper */,
 				35A2C814255DC53A00C60B92 /* ImageHelper.swift */,
 				35A2C87A255E81B600C60B92 /* ThumbnailDownloader.swift */,
 				35A2C876255E7F3900C60B92 /* PendingOperations.swift */,
@@ -285,6 +288,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		35FD0B0825622DFB003D9C85 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				35FD0B0925622E0D003D9C85 /* Theme.swift */,
+			);
+			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -390,6 +401,7 @@
 				35A2C80A255DB89D00C60B92 /* UIView+Extension.swift in Sources */,
 				35A2C7F1255DB19400C60B92 /* UICollectionView+Extension.swift in Sources */,
 				35A2C807255DB84E00C60B92 /* ImageDownloader.swift in Sources */,
+				35FD0B0A25622E0D003D9C85 /* Theme.swift in Sources */,
 				35A2C7D2255DAFD800C60B92 /* ImageCollectionCell.swift in Sources */,
 				35A2C850255DD10300C60B92 /* PlayerViewController.swift in Sources */,
 				35A2C811255DBF0C00C60B92 /* ThumbnailGenerator.swift in Sources */,
@@ -545,7 +557,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P72Y94UW2W;
 				INFOPLIST_FILE = ContinuousVideo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -565,7 +577,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P72Y94UW2W;
 				INFOPLIST_FILE = ContinuousVideo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
